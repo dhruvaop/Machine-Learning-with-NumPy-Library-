@@ -1,3 +1,3 @@
 # Machine Learning with NumPy Library
--[x] hello
+- [x] hello
 - Machine Learning with NumPy Library 
