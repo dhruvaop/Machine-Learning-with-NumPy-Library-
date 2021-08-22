@@ -5,15 +5,72 @@ python basics ML training
 
 """
 # PANDAS
+import numpy as np
+import math
 import pandas as pd
+import matplotlib.pyplot as plt
+
+g = [1, 2, 3]
+h = [4, 2, 6]
+
+plt.scatter(g, h)
+plt.show()
+
+i = [1, 2, 3, 5, 7, 8, 9]
+o = [4, 2, 6, 1, 6, 4, 2]
+plt.plot(i, o)
+plt.scatter(i, o)
+plt.show()
+
+plt.plot(i, o, "r")
+plt.scatter(i, o)
+plt.show()
+
+plt.plot(i, o, color="red", marker="*", linestyle="dashed")
+plt.scatter(i, o)
+plt.show()
+
+plt.plot(i, o, linewidth="10", color="red", marker="*", linestyle="dashed")
+plt.scatter(i, o)
+plt.show()
+
+plt.plot(i, o, marker="o", ms=30)  # Marker size.
+plt.scatter(i, o)
+plt.show()
+
+# Marker size, Marker face color, Marker Edge color.
+plt.plot(i, o, marker="*", ms=20, mfc="red", mec="green")
+plt.scatter(i, o)
+plt.show()
+
+plt.plot(i, o)  # Grid.
+plt.scatter(i, o)
+plt.grid()
+plt.show()
+
+plt.plot(i, o)
+plt.scatter(i, o)
+plt.xlabel("RollNo")
+plt.ylabel("Marks")
+plt.title("GGITS")
+plt.show()
+
+plt.bar(i, o)  # BAR CHART
+plt.show()
+# MatplotLibrary Data Visulization Library
+
+
+m = np.array([25, 50, 10, 15])      # numpy array
+mylabels = ["CS", "AIML", "IOT", "DS"]
+plt.pie(m, labels=mylabels, autopct="%.1f%%")  # Creating PIE CHARTS
+plt.legend()
+plt.show()
 
 # Numpy = ARRAYS
 # PANDAS = DATAFRAMES is a table with rows and columns
 # One single column is called as Series.
 # .csv - Comma Seperated Values
 
-import math
-import numpy as np
 arr = np.array([12, 45, 2, 4, 255, 5, 6])
 arr1 = np.array([13, 88, 54, 23])
 print(arr1)
